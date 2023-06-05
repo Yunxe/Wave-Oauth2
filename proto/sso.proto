@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package proto;
+
+option go_package="./sso_client;sso_client";
+
+service TokenService{
+    rpc GetExternalToken (TokenRequest) returns (TokenResponse){}
+}
+
+message TokenRequest{
+    string userId = 1;
+    string clientId = 2;
+}
+
+message TokenResponse{
+    string token = 1;
+    int64 expires_in = 2;
+}

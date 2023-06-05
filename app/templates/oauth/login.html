@@ -1,0 +1,40 @@
+{{define "loginPage"}}
+<div id="login-page" class="container is-hidden">
+  <form class="box">
+    <div class="field">
+      <label class="label">邮箱</label>
+      <div class="control">
+        <input
+          class="input"
+          name="email"
+          type="email"
+          placeholder="user@example.com"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">密码</label>
+      <div class="control">
+        <input
+          class="input"
+          name="password"
+          type="password"
+          placeholder="********"
+        />
+      </div>
+    </div>
+
+    <div class="field is-grouped">
+      <p class="control">
+        <button id="login" class="button is-success">登入</button>
+      </p>
+      <p class="control">
+        <button id="register" class="button is-info">注册</button>
+      </p>
+    </div>
+  </form>
+
+  <div id="responseMsg" class="notification is-hidden"></div>
+</div>
+{{end}}

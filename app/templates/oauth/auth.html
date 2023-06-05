@@ -1,0 +1,34 @@
+{{define "authPage"}}
+<div id="auth-page" class="container is-hidden">
+    <div class="box px-0 pt-0 pb-6">
+        <section class="section has-text-centered has-background-warning mb-3">
+            <h1 class="title is-4 has-text-dark">应用正在向你申请登录授权</h1>
+        </section>
+        <div class="level has-text-centered">
+            <div class="level-item">
+                <figure class="image is-256x256">
+                    <img
+                            id="avatar"
+                            class="is-rounded"
+                    />
+                </figure>
+            </div>
+        </div>
+        <div class="level has-text-centered">
+            <div class="level-item is-size-3">
+                欢迎,<strong id="userName"></strong>
+            </div>
+        </div>
+        <div class="level has-text-centered">
+            <div id="appName" class="level-item is-size-4">
+                你确定授权登录{{.ClientName}}吗?
+            </div>
+        </div>
+        <div class="level has-text-centered">
+            <div class="buttons level-item">
+                <button id="authorization" class="button is-info">授权</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

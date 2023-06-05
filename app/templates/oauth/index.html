@@ -1,0 +1,11 @@
+{{define "oauth/index"}}
+<div class="container is-fluid mt-6">
+  <section class="hero is-info">
+    <div class="hero-body has-text-centered">
+      <p class="title">WAVE</p>
+    </div>
+  </section>
+  {{template "loginPage" .}} {{template "authPage" .}}
+</div>
+<script src="/static/js/auth.js"></script>
+{{end}}

@@ -1,0 +1,25 @@
+{{define "errorPage"}}
+<link href="/static/css/error.css" rel="stylesheet" />
+
+<div class="container is-fluid mt-6">
+  <div class="box has-background-danger-light">
+    <div class="level">
+      <div class="level-item has-text-centered">
+        <ion-icon name="warning-outline"></ion-icon>
+      </div>
+    </div>
+    <article class="level is-danger">
+      <div class="level-item has-text-black">
+        ERROR:{{.Error.Message}}
+      </div>
+    </article>
+    <div class="level">
+        <div class="level-item">
+            <button name="return"class="button is-info">返回</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/error.js"></script>
+{{ end }}
